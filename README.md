@@ -13,19 +13,20 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 - [Screenshot](#screenshot)📷
 
-      ![](./screenshot.jpg)
+      ![](./final/desktopScreenShot.png.jpg)
+      ![](./final/mobileScreenShot.png.jpg)
 
 - [Links](#links)🔗
 
-      - Solution URL: [Add solution URL here](https://your-solution-url.com)
-      - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+      - Solution URL:(https://github.com/maioia/-3-column-preview-card)
+      - Live Site URL:(https://maioia.github.io/-3-column-preview-card/)
 
 - [Built with](#built-with)⚒️🎨
 
       - Semantic HTML5 markup
       - CSS custom properties
       - Flexbox
-      - Mobile-first workflow
+      - Pesudo classes in css stylesheet
 
 - [What I learned](#what-i-learned)👩‍💻
 
