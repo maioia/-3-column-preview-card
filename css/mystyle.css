@@ -4,7 +4,7 @@
   --Green-950: hsl(179, 100%, 13%);
   --Transparent-white: hsla(0, 0%, 100%, 0.75);
   --Gray-100: hsl(0, 0%, 95%);
-  --Font--size: 15px;
+  --Font-size: 15px;
   /* font-family: "Lexend Deca", sans-serif; */
   /* font-family: "Big Shoulders", sans-serif; */
 }
@@ -13,6 +13,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--Gray-100);
+  font-size: var(--Font-size);
 }
 
 img {
@@ -20,14 +22,103 @@ img {
 }
 
 .container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .section-content {
   display: flex;
-  background: red;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-content > section {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 2rem;
+  background: #eee; /* just to show it clearly (remove later) */
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  row-gap: 3rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.section-content > section:first-child {
+  background-color: var(--Gold-500);
+}
+
+.section-content > section:first-child button {
+  color: var(--Gold-500);
+}
+
+.section-content > section:nth-child(2) {
+  background-color: var(--Cyan-800);
+}
+
+.section-content > section:nth-child(2) button {
+  color: var(--Cyan-800);
+}
+
+.section-content > section:nth-child(3) {
+  background-color: var(--Green-950);
+}
+
+.section-content > section:nth-child(3) button {
+  color: var(--Green-950);
+}
+
+.section-content > section > h2 {
+  font-size: calc((var(--Font-size)) * 3);
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  border-bottom: 0.25rem dashed var(--Transparent-white);
+}
+.section-content > section > p {
+  margin-bottom: 3rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.section-content > section > button {
+  /* background-color: Transparent; */
+  background-color: var(--Transparent-white);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5rem 2rem;
+  text-transform: capitalize;
+}
+.section-content > section > a {
+  width: 3.85rem;
+  height: 3.85rem;
+  background-color: Transparent;
+  border: 2px solid var(--Transparent-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------- */
+/* Text and button responsiveness here */
+.section-content section h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.section-content section p {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.section-content section button {
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  padding: 0.75rem 1.5rem;
 }
