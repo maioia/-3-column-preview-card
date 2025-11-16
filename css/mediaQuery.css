@@ -1,0 +1,23 @@
+/* Tablets */
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column; /* stack vertically */
+    gap: 1rem;
+  }
+
+  .section-content > section {
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin: 2rem auto;
+  }
+
+  .section-content > section {
+    padding: 1rem;
+  }
+}
